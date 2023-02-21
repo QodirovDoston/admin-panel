@@ -1,0 +1,20 @@
+{
+  "data": [
+    {
+      "name": "Doston Qodirov",
+      "location": "Jizzax viloyati",
+      "price": "20000939",
+      "sale": "12 990",
+      "img": "https://images.pexels.com/photos/2246476/pexels-photo-2246476.jpeg?auto=compress&cs=tinysrgb&w=1600",
+      "id": 1
+    },
+    {
+      "name": "qodiorv",
+      "location": "sd",
+      "price": "dddddddddddddddd",
+      "sale": "234",
+      "img": "sasas",
+      "id": 2
+    }
+  ]
+}
