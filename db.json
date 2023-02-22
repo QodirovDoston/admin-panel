@@ -1,14 +1,6 @@
 {
   "data": [
     {
-      "name": "JAVLONBEK ",
-      "location": "oLMALIQNI ZO'RI",
-      "price": "200$",
-      "sale": "5000 SUM",
-      "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQC1dPnHJnxHLaj7qleIeYwwa3NPwDwfgI-9hO7uPvPmIjA_6JYX9xOk7ABUu8qYv-Jytc&usqp=CAU",
-      "id": 2
-    },
-    {
       "name": "",
       "location": "",
       "price": "",
@@ -49,12 +41,20 @@
       "id": 13
     },
     {
-      "name": "doston",
-      "location": "qodirov",
-      "price": "2000$",
-      "sale": "20$",
-      "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQC1dPnHJnxHLaj7qleIeYwwa3NPwDwfgI-9hO7uPvPmIjA_6JYX9xOk7ABUu8qYv-Jytc&usqp=CAU\"",
-      "id": 14
+      "name": "mbhvgcfxd",
+      "location": "njhgfd",
+      "price": "jhgfd",
+      "sale": "iuytfdresaw",
+      "img": "https://media.istockphoto.com/id/1026205392/photo/beautiful-luxury-home-exterior-at-twilight.jpg?s=612x612&w=0&k=20&c=HOCqYY0noIVxnp5uQf1MJJEVpsH_d4WtVQ6-OwVoeDo=",
+      "id": 18
+    },
+    {
+      "name": "kjhgfdszxdcfgvhbjn",
+      "location": "lkjhgfcxcvbnm",
+      "price": "kjhgfdxcvbn",
+      "sale": "uytfdxcfvbn",
+      "img": "https://media.istockphoto.com/id/1026205392/photo/beautiful-luxury-home-exterior-at-twilight.jpg?s=612x612&w=0&k=20&c=HOCqYY0noIVxnp5uQf1MJJEVpsH_d4WtVQ6-OwVoeDo=",
+      "id": 19
     }
   ]
 }
