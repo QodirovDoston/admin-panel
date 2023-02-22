@@ -70,9 +70,8 @@ const CreateData = () => {
                 <Form.Control type="text" placeholder="img" onChange={(e) => setImg(e.target.value)} />
                 {img.length < 1 ? <p style={{color:"red"}}>error</p> : <p style={{color:"green"}}>success</p>}
               </Form.Group>
-              {name.length && sale.length  && price.length  && img.length  < 2 ?
-               <Button style={{ width: "100%" }} variant="primary" > Submit </Button> :
-               <Button style={{ width: "100%" }} variant="primary" onClick={createAllData}>
+              {name.length  < 2 ?
+               <Button style={{width:"100%" }}variant="primary"> Submit </Button>:<Button style={{width:"100%"}} variant="primary" onClick={createAllData}>
               Submit
             </Button> 
           }
