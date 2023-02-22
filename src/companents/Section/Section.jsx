@@ -13,7 +13,6 @@ const CreateData = () => {
   const [img, setImg] = useState('')
   const navigate = useNavigate('')
 
-
   const createAllData = async () => {
     let data = {
       name: name,
@@ -22,7 +21,7 @@ const CreateData = () => {
       sale: sale,
       img: img,
     }
-    let url = 'https://my-json-server-production-10a0.up.railway.app/data'
+    let url = ' http://localhost:3001/data'
     await createData(url, data)
       .then((res) => {
         if (res.status === 201) {
@@ -71,8 +70,9 @@ const CreateData = () => {
                 <Form.Control type="text" placeholder="img" onChange={(e) => setImg(e.target.value)} />
                 {img.length < 1 ? <p style={{color:"red"}}>error</p> : <p style={{color:"green"}}>success</p>}
               </Form.Group>
-              {name.length || location.length || price.length || sale.length || img.length < 1 ? <Button style={{ width: "100%" }} variant="primary" > Submit </Button> :
-              <Button style={{ width: "100%" }} variant="primary" onClick={createAllData}>
+              {name.length && sale.length  && price.length  && img.length  < 2 ?
+               <Button style={{ width: "100%" }} variant="primary" > Submit </Button> :
+               <Button style={{ width: "100%" }} variant="primary" onClick={createAllData}>
               Submit
             </Button> 
           }

@@ -9,7 +9,7 @@ const TableBase = () => {
 
 
   const getAllData = () => {
-    axios.get('https://my-json-server-production-10a0.up.railway.app/data')
+    axios.get(' http://localhost:3001/data')
       .then((data) => {
         setName(data.data)
 
@@ -17,7 +17,7 @@ const TableBase = () => {
   }
 
   const delete_func = (id) => {
-    axios.delete(`https://my-json-server-production-10a0.up.railway.app/data/${id}`)
+    axios.delete(` http://localhost:3001/data/${id}`)
       .then((res) => {
         alert(res.statusText)
       })
