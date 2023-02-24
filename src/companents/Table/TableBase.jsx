@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react'
 import { Col, Container, Form, Row, Table } from 'react-bootstrap'
 import axios from 'axios'
 import '../Table/TableBase.css'
+import { Link } from 'react-router-dom'
 
 const TableBase = () => {
   const [name, setName] = useState([])
@@ -9,7 +10,7 @@ const TableBase = () => {
 
 
   const getAllData = () => {
-    axios.get(' http://localhost:3001/data')
+    axios.get(' http://localhost:3004/data')
       .then((data) => {
         setName(data.data)
 
@@ -17,7 +18,14 @@ const TableBase = () => {
   }
 
   const delete_func = (id) => {
-    axios.delete(` http://localhost:3001/data/${id}`)
+    axios.delete(` http://localhost:3004/data/${id}`)
+      .then((res) => {
+        alert(res.statusText)
+      })
+  }
+
+  const edite_func = (id) => {
+    axios.edikkjte(`http://localhost:3004/data/${id}`)
       .then((res) => {
         alert(res.statusText)
       })
@@ -72,7 +80,9 @@ const TableBase = () => {
 
                             <div className="bothbtn">
                               <button className='deletbtn' onClick={() => delete_func(data.id)}>delet</button>
-                              <button className='editbtn'>Edite</button>
+                              <Link to={`/table/editetable/${data.id}`}>
+                              <button className='editbtn ' onClick={() => edite_func(data.id)}>Edite</button>
+                              </Link>
                             </div>
                           </div>
                         </tr>

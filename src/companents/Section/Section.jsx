@@ -21,7 +21,7 @@ const CreateData = () => {
       sale: sale,
       img: img,
     }
-    let url = ' http://localhost:3001/data'
+    let url = ' http://localhost:3004/data'
     await createData(url, data)
       .then((res) => {
         if (res.status === 201) {
